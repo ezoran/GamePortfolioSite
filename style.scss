@@ -1,0 +1,128 @@
+@import	"originStory";
+@import "links";
+@import "portfolio";
+
+@import url('https://fonts.googleapis.com/css?family=Poiret One');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+
+h1
+{
+
+	font-weight: lighter;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: -15px;
+	padding-top: 10px;
+	#header
+	{
+		vertical-align: left;
+		padding-left:50px;
+	}
+
+	ul
+	{
+		display: inline;
+		float: right;
+		padding-right: 62px;
+		padding-top: 30px;
+		li
+		{
+			font-size: 40px;
+			font-variant: small-caps;
+			display: inline;
+			float: right;
+
+			a
+			{
+				text-align: center;
+				color: black;
+				padding: 20px;
+				text-decoration: none;
+				&:hover:not(.active) {color:white;}
+
+
+			 
+
+			}
+
+			.active
+			{
+				color: white;
+			}
+		}
+	}
+}
+
+body
+{
+	top: 0px;
+	background-image: url("IMG_0330.jpg");
+
+	height: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	font-family: 'Abel';
+	padding-bottom: 150px;
+}
+
+footer
+{
+	font-size: 16px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background: #dedede;
+	#footerInfo
+	{
+		display: inline-block;
+
+		li
+		{
+			font-size: 18px;
+			display: inline-block;
+			a
+			{
+				text-align: center;
+				color: black;
+				padding: 8px;
+				text-decoration: none;
+			}
+
+			
+		}
+
+	}
+
+
+	#footerBadge
+	{
+		float: right;
+		display: inline-block;
+		padding-top: 11px;
+		padding-right: 30px;
+	}
+
+	#footerBadge2
+	{
+		float: right;
+		display: inline-block;
+		padding-top: 5px;
+		padding-right: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+body
+{
+	margin-left: 0px;
+	margin-right: 0px;
+
+	#contain
+	{
+		width: 100%;
+		margin-top: 100px;
+	}
+	#originText
+	{
+		font-family: 'Inconsolata';
+
+		background-color: white;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		width: 50%;
+		position: absolute;
+		color: black;
+		position: relative;
+
+	}
+}

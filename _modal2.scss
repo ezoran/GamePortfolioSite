@@ -1,0 +1,122 @@
+
+.modal-header2
+{
+	padding: 12px;
+    color: white;
+	font-variant: small-caps;
+	h2
+	{
+		margin: 0px 0px 0px 0px;
+		font-weight: lighter;
+
+	}
+
+	.closeBtn2
+	{
+	color: #ccc;
+	float:right;
+	font-size:30px;
+
+		&:hover,&:focus
+		{
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+
+.modalGridContainer2
+{
+	float: center;
+	overflow: hidden;
+
+}
+
+.modalGridContainer2 > div 
+{
+  
+}
+
+.modal2
+{
+	z-index: 99;
+	display:none;
+	position: fixed;
+	right:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+	font-family: 'Inconsolata';
+
+
+	-webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+
+	.modal-content2
+	{
+		position: fixed;
+		background-color: #404040;
+		padding-bottom: 50px;
+		width: 50%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+
+
+	  	-webkit-animation-name: slideInR;
+    	-webkit-animation-duration: 0.4s;
+    	animation-name: slideInR;
+    	animation-duration: 0.4s;
+	}
+
+	
+	.item1
+	{
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.item2
+	{
+		padding-top: 20px;
+		text-align: center;
+	}
+	.item3
+	{
+		padding-top: 20px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+}
+
+/* Add Animation */
+@-webkit-keyframes slideInR {
+    from {right: -300px; opacity: 0} 
+    to {right: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {right: -300px; opacity: 0}
+    to {right: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
