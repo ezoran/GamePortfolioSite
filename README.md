@@ -1,3 +1,2 @@
 # Personal-Website
-My personal website/portfolio
-Code for my personal website/portfolio, done in HTML, CSS, and JS
+My personal website/portfolio showcasing my game development experience, done in HTML, CSS, and JS
