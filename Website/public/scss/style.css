@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret One");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+body {
+  margin-left: 0px;
+  margin-right: 0px; }
+  body #contain {
+    width: 100%;
+    margin-top: 100px; }
+  body #originText {
+    font-family: 'Inconsolata';
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 50%;
+    position: absolute;
+    color: black;
+    position: relative; }
+
+body {
+  margin-left: 0px;
+  margin-right: 0px; }
+  body #bodyLinks {
+    text-align: left;
+    display: inline-block;
+    font-size: 50px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 50px; }
+    body #bodyLinks ul {
+      background-color: white;
+      padding-left: 0px; }
+    body #bodyLinks a {
+      font-family: 'Inconsolata';
+      color: black;
+      padding: 0px;
+      text-decoration: none; }
+      body #bodyLinks a:hover {
+        color: green; }
+    body #bodyLinks ul li {
+      list-style-type: none; }
+
+.modal-header {
+  padding: 12px;
+  color: black;
+  font-variant: small-caps; }
+  .modal-header h2 {
+    margin: 0px 0px 0px 0px;
+    font-weight: lighter; }
+  .modal-header .closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px; }
+    .modal-header .closeBtn:hover, .modal-header .closeBtn:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+
+.modalGridContainer {
+  float: center;
+  overflow: hidden; }
+
+.modal {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Inconsolata';
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s; }
+  .modal .modal-content {
+    position: fixed;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-right: auto;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s; }
+  .modal .item11 {
+    padding-top: 0px;
+    text-align: center; }
+    .modal .item11 p {
+      background-color: white;
+      padding-top: 0px;
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      overflow-wrap: break-word;
+      color: black;
+      font-family: 'Inconsolata'; }
+  .modal .item12 {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px; }
+  .modal .item13 {
+    padding-top: 0px;
+    text-align: center;
+    padding-bottom: 10px; }
+    .modal .item13 p {
+      background-color: white;
+      display: inline-block;
+      padding-top: 0px;
+      padding: 10px;
+      font-size: 16px;
+      text-align: left;
+      width: 75%;
+      height: 100%;
+      overflow-wrap: break-word;
+      color: black; }
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+@keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.modal-header2 {
+  padding: 12px;
+  color: white;
+  font-variant: small-caps; }
+  .modal-header2 h2 {
+    margin: 0px 0px 0px 0px;
+    font-weight: lighter; }
+  .modal-header2 .closeBtn2 {
+    color: #ccc;
+    float: right;
+    font-size: 30px; }
+    .modal-header2 .closeBtn2:hover, .modal-header2 .closeBtn2:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+
+.modalGridContainer2 {
+  float: center;
+  overflow: hidden; }
+
+.modal2 {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Inconsolata';
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s; }
+  .modal2 .modal-content2 {
+    position: fixed;
+    background-color: #404040;
+    padding-bottom: 50px;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    -webkit-animation-name: slideInR;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideInR;
+    animation-duration: 0.4s; }
+  .modal2 .item1 {
+    padding-top: 20px;
+    text-align: center; }
+  .modal2 .item2 {
+    padding-top: 20px;
+    text-align: center; }
+  .modal2 .item3 {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px; }
+
+/* Add Animation */
+@-webkit-keyframes slideInR {
+  from {
+    right: -300px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+@keyframes slideIn {
+  from {
+    right: -300px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.modal-header3 {
+  padding: 12px;
+  color: black;
+  font-variant: small-caps; }
+  .modal-header3 h2 {
+    margin: 0px 0px 0px 0px;
+    font-weight: lighter; }
+  .modal-header3 .closeBtn3 {
+    color: #ccc;
+    float: right;
+    font-size: 50px; }
+    .modal-header3 .closeBtn3:hover, .modal-header3 .closeBtn3:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+
+.modal3 {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Inconsolata';
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s; }
+  .modal3 .modal-content3 {
+    position: fixed;
+    background-color: white;
+    margin-right: auto;
+    padding-bottom: 50px;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s; }
+  .modal3 .item21 {
+    padding-top: 0px;
+    text-align: center; }
+    .modal3 .item21 p {
+      background-color: white;
+      padding-top: 0px;
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      overflow-wrap: break-word;
+      color: black; }
+  .modal3 .item22 {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px; }
+    .modal3 .item22 iframe {
+      height: 400px;
+      width: 90%; }
+  .modal3 .item23 {
+    padding-top: 0px;
+    text-align: center; }
+    .modal3 .item23 p {
+      background-color: white;
+      display: inline-block;
+      padding-top: 0px;
+      padding: 10px;
+      font-size: 16px;
+      text-align: left;
+      width: 90%;
+      height: 100%;
+      overflow-wrap: break-word;
+      color: black; }
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+@keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.gridContainer {
+  display: grid;
+  grid-template-areas: 'left middle right';
+  grid-gap: 40px;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.button1 {
+  grid-area: left;
+  background-image: url("thumbnailReal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  height: 650px;
+  font-family: 'Inconsolata';
+  font-size: 40px;
+  font-variant: small-caps;
+  text-align: left;
+  color: black; }
+  .button1:hover {
+    color: black;
+    -webkit-transform: scale(1.05);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -o-transform: scale(1.05);
+    /* Opera */
+    transform: scale(1.05); }
+
+.button2 {
+  grid-area: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("witchStill1.png");
+  opacity: 0.5;
+  padding: 1em 2em;
+  color: #fff;
+  float: center;
+  border: 0;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  height: 650px;
+  font-family: 'Inconsolata';
+  font-size: 40px;
+  font-variant: small-caps;
+  text-align: left;
+  color: black; }
+  .button2:hover {
+    color: black;
+    -webkit-transform: scale(1.05);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -o-transform: scale(1.05);
+    /* Opera */
+    transform: scale(1.05); }
+
+.button3 {
+  grid-area: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("code.PNG");
+  opacity: 0.5;
+  padding: 1em 2em;
+  color: #fff;
+  float: left;
+  border: 0;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  height: 650px;
+  font-family: 'Inconsolata';
+  font-size: 40px;
+  font-variant: small-caps;
+  text-align: left;
+  color: black; }
+  .button3:hover {
+    color: black;
+    -webkit-transform: scale(1.05);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -o-transform: scale(1.05);
+    /* Opera */
+    transform: scale(1.05); }
+
+h1 {
+  font-weight: lighter;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+  padding-top: 10px; }
+  h1 #header {
+    vertical-align: left;
+    padding-left: 50px; }
+  h1 ul {
+    display: inline;
+    float: right;
+    padding-right: 62px;
+    padding-top: 30px; }
+    h1 ul li {
+      font-size: 40px;
+      font-variant: small-caps;
+      display: inline;
+      float: right; }
+      h1 ul li a {
+        text-align: center;
+        color: black;
+        padding: 20px;
+        text-decoration: none; }
+        h1 ul li a:hover:not(.active) {
+          color: white; }
+      h1 ul li .active {
+        color: white; }
+
+body {
+  top: 0px;
+  background-image: url("IMG_0330.jpg");
+  height: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Abel';
+  padding-bottom: 150px; }
+
+footer {
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #dedede; }
+  footer #footerInfo {
+    display: inline-block; }
+    footer #footerInfo li {
+      font-size: 18px;
+      display: inline-block; }
+      footer #footerInfo li a {
+        text-align: center;
+        color: black;
+        padding: 8px;
+        text-decoration: none; }
+  footer #footerBadge {
+    float: right;
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 30px; }
+  footer #footerBadge2 {
+    float: right;
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 30px; }
+
+/*# sourceMappingURL=style.css.map */
